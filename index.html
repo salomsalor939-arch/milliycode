@@ -23,10 +23,18 @@
         .container {
             background-color: white;
             padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             max-width: 600px;
             width: 100%;
+        }
+        
+        .header-gif {
+            width: 120px; /* Gif o'lchami */
+            height: 120px;
+            margin-bottom: 30px;
+            border-radius: 50%; /* Gifni dumaloq qilish */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         .download-btn {
@@ -50,7 +58,7 @@
         }
         
         .ai-notice {
-            margin-top: 15px;
+            margin-top: 20px;
             font-size: 14px;
             color: #555;
         }
@@ -66,6 +74,10 @@
             .container {
                 padding: 30px;
             }
+            .header-gif {
+                width: 100px;
+                height: 100px;
+            }
             .download-btn {
                 padding: 16px 30px;
                 font-size: 16px;
@@ -75,10 +87,15 @@
         /* Mobil qurilmalar uchun moslashuv */
         @media (max-width: 480px) {
             .container {
-                padding: 20px;
+                padding: 25px;
+            }
+            .header-gif {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 25px;
             }
             .download-btn {
-                padding: 14px 25px;
+                padding: 15px 25px;
                 font-size: 14px;
                 width: 100%; /* Ekran kengligini to'liq egallash */
                 box-sizing: border-box;
@@ -95,9 +112,11 @@
 <body>
 
     <div class="container">
+        <!-- MUHIM: "api.gif" nomli faylni ushbu HTML fayl bilan bir papkaga joylashtiring -->
+        <img src="api.gif" alt="API animatsiyasi" class="header-gif">
+        
         <!-- Yuklab olish tugmasi -->
-        <!-- MUHIM: "SIZNING_APK_FAYLINGIZ_HAVOLASI.apk" o'rniga o'zingizning APK fayl havolangizni qo'ying -->
-        <a href="https://salomsalor939-arch.github.io/milliycode/ai-app.apk" class="download-btn" download>MILLIYCODE ilovasini yuklab olish uchun yuklab olish tugmasini bosing</a>
+        <a href="https://salomsalor939-arch.github.io/milliycode/app.apk" class="download-btn" download>MILLIYCODE ilovasini yuklab olish uchun yuklab olish tugmasini bosing</a>
         
         <!-- AI haqida izoh -->
         <p class="ai-notice">AI qo'shilmagan</p>
